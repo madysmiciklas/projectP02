@@ -25,6 +25,8 @@
 body {
   font-family: "SpartanMB", sans-serif;
   padding: 2rem;
+  font-size: 16px;
+
 }
 
 section:not([id]) {
@@ -140,7 +142,7 @@ label {
   background-color: none;
   font-weight: bold;
   font-size: 2em;
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .stylesheet-h3 {
@@ -196,5 +198,69 @@ label {
 }
 
 /* 
-  COMBINED ELEMENTS -------------------
+  COMBINED ELEMENTS ------------------------------------------------------
 */
+
+/*
+  Styling for Product Items 
+*/
+.product-item{
+  box-sizing: border-box;
+  width: 25%;
+  min-width: 200px;
+  padding: 1em;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+}
+
+.product-item img{
+  width: 100%;
+}
+
+.product-name{
+  text-align: left;
+  display: inline;
+}
+
+.product-price{
+  text-align: right;
+  display: inline;
+}
+
+
+/*
+  Styling for Page layout ------------------------------------------------
+*/
+
+/*
+Inspired by:
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+.new-items{
+  position: absolute;
+  width: 100%;
+  max-width: 1000px;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  justify-content: space-evenly;
+
+  background-color: #333;
+}
