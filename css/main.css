@@ -24,7 +24,7 @@
 
 body {
   font-family: "SpartanMB", sans-serif;
-  padding: 2rem;
+  padding: 0;
   font-size: 16px;
 
 }
@@ -74,7 +74,7 @@ label {
   background-color: none;
   border-radius: 1em;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-decoration: none;
  /* -webkit-transition: background-color 0.5s ease-out; */
 /*  transition: background-color 0.5s ease-out; */
@@ -245,11 +245,66 @@ label {
 Inspired by:
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 */
+.banner-promo{
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #8CAA6E;
+}
+.banner-promo p{
+  color: #fff;
+  font-size: .7rem;
+  padding: .5em;
+  margin: 0;
+}
+
+.header{
+  width: 100%;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search{
+  width: 25%;
+}
+
+.search p{
+  padding: .5em .75em;
+  background-color: darkgray;
+}
+
+.cart{
+  height: 24px;
+  width: 24px;
+  background-color: #8CAA6E;
+}
+
+.banner{
+  width: 100%;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+}
 
 .new-items{
 
   width: 100%;
   max-width: 1000px;
+  margin: 0 auto;
 
   display: -webkit-box;
   display: -moz-box;
@@ -261,6 +316,9 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   flex-wrap: wrap;
 
   justify-content: space-evenly;
+}
 
-  background-color: #333;
+.new-items .new-items-title{
+  width: 100%;
+  padding-left: 1em;
 }
