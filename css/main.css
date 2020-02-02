@@ -381,7 +381,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-left: 0 1em;
+  padding-left: 0 3em;
 
   justify-content: space-between;
 }
@@ -400,12 +400,12 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   padding-left: .5em;
   justify-content: left;
 }
-.offer-img img{
-  width: 66%;
+.offer img{
+  width: 25%;
 }
 
 .offer-info{
-  width: 50%;
+  width: auto;
 
   box-sizing: border-box;
 
@@ -419,9 +419,26 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
   text-align: left;
 
-  padding: 0 1em;
+  padding-left: 3em;
   justify-content: center;
   align-items: flex-start;
+}
+
+@media (max-width: 400px){
+  .offer img{
+    width: 50%;
+  }
+  .offer{
+    font-size: .6rem;
+    padding: 0 1em;
+  }
+  .offer-info{
+    width: 50%;
+  }
+
+  .offer a{
+    font-size: .7rem;
+  }
 }
 
 /*
@@ -454,6 +471,14 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   padding-left: 1em;
 }
 
+@media (max-width:400px){
+  .new-items-title{
+    text-align: center;
+  }
+  .new-items .product-item{
+    width: 40%;
+  }
+}
 /*
   ----- Styling for Footer -----
 
