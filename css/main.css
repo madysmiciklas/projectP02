@@ -198,17 +198,19 @@ label {
 }
 
 /* 
-  COMBINED ELEMENTS ------------------------------------------------------
+  -------------------------- COMBINED ELEMENTS -----------------------------
 */
 
 /*
-  Styling for Product Items 
+  Styling for Product Item 
 */
 .product-item{
   box-sizing: border-box;
   width: 25%;
   min-width: 200px;
   padding: 1em;
+
+  font-size: 1rem;
 
   display: -webkit-box;
   display: -moz-box;
@@ -226,6 +228,10 @@ label {
   width: 100%;
 }
 
+.product-item p{
+  padding-top: .5em;
+}
+
 .product-name{
   text-align: left;
   display: inline;
@@ -238,10 +244,16 @@ label {
 
 
 /*
-  Styling for Page layout ------------------------------------------------
+  ------------------------------- PAGE LAYOUT -------------------------------
 */
 
 /*
+   
+*/
+
+/*
+  ----- Styling for Promo Banner -----
+
 Inspired by:
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 */
@@ -259,6 +271,13 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   margin: 0;
 }
 
+/*
+  ----- Styling for Header -----
+
+Inspired by:
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
 .header{
   width: 100%;
 
@@ -267,6 +286,8 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+
+  flex-wrap: wrap;
 
   justify-content: space-around;
   align-items: center;
@@ -288,6 +309,39 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   margin:0 1em;
 }
 
+.header-mobile{
+  display: none;
+  
+}
+
+@media (max-width:400px) {
+.header-mobile{
+  width: 100%;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+}
+.header{
+  display: none;
+}
+
+
+
+}
+
+/*
+  ----- Styling for Banner -----
+
+Inspired by:
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
 .banner{
   width: 100%;
   height: 300px;
@@ -306,6 +360,13 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   background-color: rgb(230, 230, 230);
 }
 
+/*
+  ----- Styling for Offer -----
+
+Inspired by:
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
 .offer{
   box-sizing: border-box;
   width: 100%;
@@ -320,7 +381,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-left: 0 1em;
+  padding-left: 0 3em;
 
   justify-content: space-between;
 }
@@ -339,12 +400,12 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   padding-left: .5em;
   justify-content: left;
 }
-.offer-img img{
-  width: 66%;
+.offer img{
+  width: 25%;
 }
 
 .offer-info{
-  width: 50%;
+  width: auto;
 
   box-sizing: border-box;
 
@@ -358,10 +419,34 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
   text-align: left;
 
-  padding: 0 1em;
+  padding-left: 3em;
   justify-content: center;
   align-items: flex-start;
 }
+
+@media (max-width: 400px){
+  .offer img{
+    width: 50%;
+  }
+  .offer{
+    font-size: .6rem;
+    padding: 0 1em;
+  }
+  .offer-info{
+    width: 50%;
+  }
+
+  .offer a{
+    font-size: .7rem;
+  }
+}
+
+/*
+  ----- Styling for New Items -----
+
+Inspired by:
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
 
 .new-items{
 
@@ -385,6 +470,21 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   width: 100%;
   padding-left: 1em;
 }
+
+@media (max-width:400px){
+  .new-items-title{
+    text-align: center;
+  }
+  .new-items .product-item{
+    width: 40%;
+  }
+}
+/*
+  ----- Styling for Footer -----
+
+Inspired by:
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
 
 .footer{
   width: 100%;
