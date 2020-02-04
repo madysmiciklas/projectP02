@@ -1,14 +1,15 @@
 <!-- Used the starter template provided by Paul Brokenshire on Canvas: Style_Guide_Template.zip-->
 
 <!DOCTYPE html>
-<html>
+<html class="styleguide">
 
   <head>
-
-    <meta charset="utf-8">
-    <title>Style Guide Template</title>
-
+    <meta charset="utf-8" />
     <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Style Guide Template</title>
 
   </head>
 
@@ -238,7 +239,7 @@
 
 
     <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="combined_elements">
+    section id="combined_elements">
 
       <!--Main Nav Section-->
       <section>
@@ -303,13 +304,230 @@
       <!--Grid Structure Section-->
       <section>
 
-        <h2>Grid Structure</h2>
+        <h2>Grid</h2>
 
         <p>Web Grid Structure</p>
         <img src="img/grid_web.png" alt="Website Grid Structure" height=35%; width=35%;>
 
         <p>Mobile Grid Structure</p>
         <img src="img/grid_mobile.png" alt="Website Grid Structure" height=15%; width=15%;>
+
+      </section>
+
+      <section>
+
+        <h2>Promo banner</h2>
+        <h3>CSS selector:</h3>
+        <p>.banner-promo</p>
+
+        <h3>Sample code:</h3>
+        <pre><code class="code-style">
+          &lt;div class="banner-promo"&gt;
+            &lt;p&gt;Promo Banner&lt;/p&gt;
+          &lt;/div&gt;
+        </code></pre>
+
+        <h3>Rendered element:</h3>
+        <div class="banner-promo">
+          <p>Promo Banner</p>
+        </div>
+      </section>
+
+      <section>
+
+        <h2>Header</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.header</p>
+        <p>.hamburger-icon</p>
+        <p>.navication</p>
+        <p>.button-nav</p>
+        <p>.title</p>
+        <p>.search-bar</p>
+        <p>.search-icon</p>
+        <p>.icon</p>
+        <p>.cart</p>
+
+        <h3>Sample code:</h3>
+        <pre><code class="code-style">
+          &lt;div class="header"&gt;
+            &lt;img class="hamburger-icon" src="img/hamburger.svg" alt="Menu icon"&gt;
+            &lt;nav class="navigation"&gt;
+              &lt;a class="button-nav" href="#"&gt;Products&lt;/a&gt;
+              &lt;a class="button-nav" href="#"&gt;About&lt;/a&gt;
+              &lt;a class="button-nav" href="#"&gt;Contact&lt;/a&gt;
+              &lt;a class="button-nav" href="styleguide.html"&gt;Styleguide&lt;/a&gt;
+            &lt;/nav&gt;
+            &lt;h1 class="title"&gt;Nectar&lt;/h1&gt;
+            &lt;div class="search-bar"&gt;&lt;p&gt;search bar&lt;/p&gt;&lt;/div&gt;
+            &lt;img  class="search-icon" src="img/search.svg" alt="Search icon"&gt;
+            &lt;div class="icon cart"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        </code></pre>
+
+        <h3>Rendered element:</h3>
+        <div class="header">
+          <img class="hamburger-icon" src="img/hamburger.svg" alt="Menu icon">
+          <nav class="navigation">
+            <a class="button-nav" href="#">Products</a>
+            <a class="button-nav" href="#">About</a>
+            <a class="button-nav" href="#">Contact</a>
+            <a class="button-nav" href="styleguide.html">Styleguide</a>
+          </nav>
+          <h1 class="title">Nectar</h1>
+          <div class="search-bar"><p>search bar</p></div>
+          <img  class="search-icon" src="img/search.svg" alt="Search icon">
+          <div class="icon cart"></div>
+        </div>
+      </section>
+
+      <section>
+
+        <h2>Banner</h2>
+        
+        <h3>CSS selector:</h3>
+        <p>.banner</p>
+        <p>.button-submit</p>
+        <p>.h1</p>
+        <p>.p</p>
+
+        <h3>Sample code:</h3>
+        <pre><code class="code-style">
+          &lt;div class="banner"&gt;
+          &lt;h1&gt;Banner image&lt;/h1&gt;
+          &lt;p&gt;Some descriptive text&lt;/p&gt;
+          &lt;a class="button-submit" href="#"&gt;A link to something&lt;/a&gt;
+          &lt;/div&gt;
+        </code></pre>
+
+        <h3>Rendered element:</h3>
+        <div class="banner">
+          <h1>Banner image</h1>
+          <p>Some descriptive text</p>
+          <a class="button-submit" href="#">A link to something</a>
+        </div>
+        
+      </section>
+
+      <section>
+
+        <h2>Container</h2>
+        
+        <h3>CSS selector:</h3>
+        <p>.container</p>
+        
+
+        <h3>Sample code:</h3>
+        <pre><code class="code-style">
+           &lt;div class="container"&gt;
+            
+            &lt;div class="container-title"&gt;
+              &lt;h2&gt;Container of for example items&lt;/h2&gt;
+            &lt;/div&gt;
+
+            &lt;div class="product-item"&gt;
+              &lt;img src="img/paint.jpeg" alt="Picture of brushes"&gt;
+              &lt;p class="product-name"&gt;Brush&lt;/p&gt;
+              &lt;p class="product-price"&gt;$20.00&lt;/p&gt;
+            &lt;/div&gt;
+      
+            &lt;div class="product-item"&gt;
+              &lt;img src="img/paint.jpeg" alt="Picture of brushes"&gt;
+              &lt;p class="product-name"&gt;Brush&lt;/p&gt;
+              &lt;p class="product-price"&gt;$20.00&lt;/p&gt;
+            &lt;/div&gt;
+      
+            &lt;div class="product-item"&gt;
+              &lt;img src="img/paint.jpeg" alt="Picture of brushes"&gt;
+              &lt;p class="product-name"&gt;Brush&lt;/p&gt;
+              &lt;p class="product-price"&gt;$20.00&lt;/p&gt;
+            &lt;/div&gt;
+      
+            &lt;div class="product-item"&gt;
+              &lt;img src="img/paint.jpeg" alt="Picture of brushes"&gt;
+              &lt;p class="product-name"&gt;Brush&lt;/p&gt;
+              &lt;p class="product-price"&gt;$20.00&lt;/p&gt;
+            &lt;/div&gt;
+
+          &lt;/div&gt;
+            
+        </code></pre>
+
+        <h3>Rendered element:</h3>
+        <div class="container">
+          <div class="container-title">
+            <h2>Container of for example items</h2>
+          </div>
+          <div class="product-item">
+            <img src="img/paint.jpeg" alt="Picture of brushes">
+            <p class="product-name">Brush</p>
+            <p class="product-price">$20.00</p>
+          </div>
+    
+          <div class="product-item">
+            <img src="img/paint.jpeg" alt="Picture of brushes">
+            <p class="product-name">Brush</p>
+            <p class="product-price">$20.00</p>
+          </div>
+    
+          <div class="product-item">
+            <img src="img/paint.jpeg" alt="Picture of brushes">
+            <p class="product-name">Brush</p>
+            <p class="product-price">$20.00</p>
+          </div>
+    
+          <div class="product-item">
+            <img src="img/paint.jpeg" alt="Picture of brushes">
+            <p class="product-name">Brush</p>
+            <p class="product-price">$20.00</p>
+          </div>
+        </div>
+        
+      </section>
+      
+      <section>
+
+        <h2>Footer</h2>
+        
+        <h3>CSS selector:</h3>
+        <p>.footer</p>
+        
+
+        <h3>Sample code:</h3>
+        <pre><code class="code-style">
+          &lt;div class="footer"&gt;
+            &lt;h1 class="title"&gt;Nectar&lt;/h1&gt;
+            &lt;nav&gt;
+              &lt;a class="button-nav" href="#"&gt;Products&lt;/a&gt;
+              &lt;a class="button-nav" href="#"&gt;About&lt;/a&gt;
+              &lt;a class="button-nav" href="#"&gt;Contact&lt;/a&gt;
+            &lt;/nav&gt;
+            &lt;div class="social-icons"&gt;
+              &lt;div class="icon insta"&gt;&lt;/div&gt;
+              &lt;div class="icon fb"&gt;&lt;/div&gt;
+              &lt;div class="icon twitter"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+            
+        </code></pre>
+
+        <h3>Rendered element:</h3>
+        <div class="footer">
+          <h1 class="title">Nectar</h1>
+          <nav>
+            <a class="button-nav" href="#">Products</a>
+            <a class="button-nav" href="#">About</a>
+            <a class="button-nav" href="#">Contact</a>
+          </nav>
+          <div class="social-icons">
+            <div class="icon insta"></div>
+            <div class="icon fb"></div>
+            <div class="icon twitter"></div>
+          </div>
+        </div>
+        
+      </section>
+        
 
 
       </section>
