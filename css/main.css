@@ -244,10 +244,10 @@ label {
 */
 
 /*
-  Styling for Product Item 
+  --------- Styling for Product Item ----------
 */
 .product-item{
-  /*box-sizing: border-box;*/
+
   width: 25%;
   min-width: 200px;
   padding: 1em;
@@ -314,7 +314,6 @@ Inspired by:
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 */
 .banner-promo{
-  /*box-sizing: border-box;*/
   margin: 0;
   width: 100%;
   text-align: center;
@@ -363,10 +362,14 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 }
 
 .icon{
-  height: 24px;
   width: 24px;
-  background-color: #8CAA6E;
-  margin:0 1em;
+  height: auto;
+  margin: 0 1em;
+  cursor: pointer;
+}
+
+.header .cart-icon{
+  display: flex;
 }
 
 .header .hamburger-icon{
@@ -376,11 +379,13 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   display: none;
 }
 
-@media (max-width:650px) {
+
+
+@media (max-width:750px) {
   .header .hamburger-icon{
     display: flex;
   }
-  .header .navigation, .header .cart{
+  .header .navigation, .header .cart-icon{
     display: none;
   }
   .header{
@@ -520,7 +525,6 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 */
 
 .offer{
-  /*box-sizing: border-box;*/
   width: 100%;
   max-width: 1000px;
   margin: 5em auto;
@@ -541,8 +545,6 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 .offer-img{
   width: 50%;
 
-  /*box-sizing: border-box;*/
-
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -558,8 +560,6 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 .offer-info{
   width: auto;
-
-  /*box-sizing: border-box;*/
 
   display: -webkit-box;
   display: -moz-box;
