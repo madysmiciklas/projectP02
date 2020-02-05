@@ -79,6 +79,12 @@ input {
   width: 40em;
 }
 
+/*input styling for checkbox in the filter section */
+.checkbox {
+  width:2em;
+  padding:0em;
+}
+
 label {
   display: block;
 }
@@ -417,6 +423,95 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   background-color: rgb(230, 230, 230);
 }
 
+/* ------ Styling for Filter -------  */
+
+.filter {
+  width: 100%;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding: 1em;
+
+  flex-direction: row;
+
+  justify-content: left;
+  align-items: left;
+
+  color: black;
+  background-color: darkgray;
+}
+
+.filter-h2 {
+  width: 100%;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0.5em .75em;
+
+  flex-direction: column;
+
+  color: white;
+  justify-content: left;
+  align-items: left;
+  background-color: grey;
+}
+
+.filter-h3 {
+  padding-bottom: 1em;
+}
+
+.filter-category {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+
+.filter-category-price {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  padding-left: 3em;
+}
+
+.filter-category-colour {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  padding-left: 3em;
+}
+
+.filter-element {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+}
+
 /*
   ----- Styling for Offer -----
 
@@ -532,6 +627,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 .container .product-title{
   text-align: center;
   padding-top: 3em;
+  padding-bottom: 3em;
   width: 100%;
 }
 
