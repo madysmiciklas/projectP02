@@ -358,6 +358,8 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 .header .title{
   padding: 0 1em;
+  text-decoration: none;
+  color: black;
 }
 
 .search-bar{
