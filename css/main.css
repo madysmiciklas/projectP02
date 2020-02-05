@@ -359,6 +359,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   width: 24px;
   height: auto;
   margin: 0 1em;
+  cursor: pointer;
 }
 
 .header .cart-icon{
