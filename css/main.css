@@ -356,10 +356,13 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 }
 
 .icon{
-  height: 24px;
   width: 24px;
-  background-color: #8CAA6E;
-  margin:0 1em;
+  height: auto;
+  margin: 0 1em;
+}
+
+.header .cart-icon{
+  display: flex;
 }
 
 .header .hamburger-icon{
@@ -369,11 +372,13 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   display: none;
 }
 
-@media (max-width:650px) {
+
+
+@media (max-width:750px) {
   .header .hamburger-icon{
     display: flex;
   }
-  .header .navigation, .header .cart{
+  .header .navigation, .header .cart-icon{
     display: none;
   }
   .header{
