@@ -215,6 +215,16 @@ label {
     padding-right: 7em;
 }
 
+.list-num {
+  display: block;
+  padding-left: 2em;
+}
+
+.list-bullet {
+  display: block;
+  padding-left: 2em;
+}
+
 /* 
   -------------------------- COMBINED ELEMENTS -----------------------------
 */
