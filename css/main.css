@@ -528,6 +528,13 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   padding-left: 1em;
 }
 
+/*text-align learned from https://www.freecodecamp.org/news/how-to-center-things-with-style-in-css-dc87b7542689/ */
+.container .product-title{
+  text-align: center;
+  padding-top: 3em;
+  width: 100%;
+}
+
 @media (max-width:400px){
   .container-title{
     text-align: center;
