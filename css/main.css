@@ -124,7 +124,7 @@ label {
 /*styling for SUBMIT button*/
 .button-submit {
   display: inline-block;
-  padding: 0.75em 1.5em;
+  padding: .75em 1.5em;
   color: white;
   background-color: #8CAA6E;
   border-radius: 0em;
@@ -138,6 +138,10 @@ label {
 
 .button-submit:hover, .button-submit:focus {
   background-color: #B3CC9A;
+}
+
+.banner-para {
+  padding-bottom: 2em;
 }
 
 /* 
@@ -278,6 +282,11 @@ label {
     margin: .5em 0;
 
   }
+}
+
+.grid-img {
+  display: block;
+  padding-bottom: 2em;
 }
 
 /*
