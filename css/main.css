@@ -43,11 +43,15 @@ https://www.w3schools.com/cssref/css3_pr_box-sizing.asp
   src: url('../fonts/SpartanMB-SemiBold.otf');
   src: url('../fonts/SpartanMB-SemiBold.otf?#iefix') format('embedded-opentype'),
 }
-
+/*
+Inspired by
+https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b
+*/
 body {
   font-family: "SpartanMB", sans-serif;
-  padding: 0;
   font-size: 16px;
+  min-height: 100%;
+  display: ;
 
 }
 
@@ -341,6 +345,10 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+
+  position: sticky;
+  top: 0;
+  background-color: #fff;
 
   flex-wrap: wrap;
 
@@ -655,6 +663,11 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+
+  
+  bottom: 0;
+  left: 0;
+  right: 0;
 
   justify-content: space-around;
   align-items: center;
