@@ -24,6 +24,10 @@ https://www.w3schools.com/cssref/css3_pr_box-sizing.asp
   margin: 1em;
 }
 
+.sitemap{
+  width: 100%;
+}
+
 @font-face {
   font-family: 'SpartanMB';
   font-weight: normal;
@@ -366,7 +370,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   display: none;
 }
 
-@media (max-width:500px) {
+@media (max-width:650px) {
   .header .hamburger-icon{
     display: flex;
   }
