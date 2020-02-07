@@ -652,6 +652,13 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   width: 100%;
 }
 
+.container .about-title{
+  text-align: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  width: 100%;
+}
+
 @media (max-width:400px){
   .container-title{
     text-align: center;
@@ -659,6 +666,26 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   .container .product-item{
     width: 40%;
   }
+}
+
+.container .about-img {
+  text-align: left;
+  width: 50%;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  justify-content: left;
+
+  background-color: grey;
 }
 /*
   ----- Styling for Footer -----
