@@ -528,6 +528,17 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 }
 
 /*
+  ----- Styling for Product page -----
+
+Inspired by:
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+.product-page-img{
+  max-width: 50%;
+}
+
+/*
   ----- Styling for Offer -----
 
 Inspired by:
