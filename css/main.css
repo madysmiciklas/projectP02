@@ -656,24 +656,22 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 }
 
 .container .about-img {
-  text-align: left;
-  width: 50%;
-  max-width: 1000px;
-  margin: 0 auto;
-
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-
-  justify-content: left;
-
-  background-color: grey;
+  max-width: 100%;
 }
+
+.container .about-text {
+  padding-top: 5em;
+  padding-left: 8em;
+  padding-right: 8em;
+}
+
+.container .about-text2 {
+  padding-top: 2em;
+   padding-left: 8em;
+  padding-right: 8em;
+  padding-bottom: 5em;
+}
+
 /*
   ----- Styling for Footer -----
 
