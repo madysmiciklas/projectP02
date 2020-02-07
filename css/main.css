@@ -646,6 +646,14 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   width: 100%;
 }
 
+.container .search-title{
+  text-align: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  width: 80%;
+  color: grey;
+}
+
 @media (max-width:400px){
   .container-title{
     text-align: center;
