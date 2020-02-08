@@ -51,7 +51,6 @@ body {
   font-family: "SpartanMB", sans-serif;
   font-size: 16px;
   min-height: 100%;
-  display: ;
 
 }
 
@@ -201,7 +200,11 @@ label {
 
 .code-style {
   display:block;
-  width:40em;
+  width:auto;
+}
+
+.title{
+  text-decoration: none;
 }
 
 .nav-main {
@@ -358,7 +361,6 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 .header .title{
   padding: 0 1em;
-  text-decoration: none;
   color: black;
 }
 
@@ -535,7 +537,24 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 */
 
 .product-page-img{
-  max-width: 50%;
+
+
+  width: 50%;
+}
+
+.product-info{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+
+  margin: 0 auto;
+  width: 25%;
 }
 
 /*
@@ -625,7 +644,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 1em auto;
 
   display: -webkit-box;
   display: -moz-box;
@@ -652,13 +671,6 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   width: 100%;
 }
 
-.container .about-title{
-  text-align: center;
-  padding-top: 3em;
-  padding-bottom: 3em;
-  width: 100%;
-}
-
 @media (max-width:400px){
   .container-title{
     text-align: center;
@@ -666,26 +678,6 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   .container .product-item{
     width: 40%;
   }
-}
-
-.container .about-img {
-  text-align: left;
-  width: 50%;
-  max-width: 1000px;
-  margin: 0 auto;
-
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-
-  justify-content: left;
-
-  background-color: grey;
 }
 /*
   ----- Styling for Footer -----
@@ -704,19 +696,42 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   display: -webkit-flex;
   display: flex;
 
+  padding: 1em 2em;
+
+  height: auto;
   
   bottom: 0;
   left: 0;
   right: 0;
 
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
   background-color: #8CAA6E;
 }
 
-.footer h1, .footer .button-nav{
+.facebook-icon, .instagram-icon, .twitter-icon{
   color: #fff;
+  font-size: 2rem;
+}
+
+.instagram-icon{
+  padding: 0 1rem;
+}
+.copyright{
+  font-size: .75rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 1em 0;
+}
+
+.footer p, .social-icons{
+  color: #fff;
+}
+
+.footer .title{
+  color: #fff;
+  margin: 0;
 }
 
 .social-icons{
@@ -729,6 +744,17 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   justify-content: space-between;
   align-items: center;
 }
-.fb,.insta,.twitter{
-  background-color: #fff;
+
+@media(max-width:750px){
+  .footer{
+    flex-direction: column;
+    padding: 1em .5em;
+    height: auto;
+  }
+  .copyright{
+    font-size: .5rem;
+    order: 3;
+    padding: 0;
+  }
+  
 }
