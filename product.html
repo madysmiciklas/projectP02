@@ -1,50 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link href="css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">         
-    <title>Brush</title>
-  </head>
-  <body>
-    <div class="banner-promo">
-      <p>Paintbrushes 40% off - use code paint40</p>
+
+<head>
+  <meta charset="utf-8">
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brush</title>
+  <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+</head>
+
+<body>
+  <div class="banner-promo">
+    <p>Paintbrushes 40% off - use code paint40</p>
+  </div>
+
+  <div class="header">
+    <img class="hamburger-icon icon" href="#" src="img/hamburger.svg" alt="Menu icon">
+    <h1 class="title"><a class="title" href="index.html">Nectar</a></h1>
+    <nav class="navigation">
+      <a class="button-nav" href="products.html">Products</a>
+      <a class="button-nav" href="about.html">About</a>
+      <a class="button-nav" href="contact.html">Contact</a>
+      <a class="button-nav" href="styleguide.html">Styleguide</a>
+    </nav>
+    <div class="search-bar">
+      <p>search bar</p>
     </div>
+    <img class="search-icon icon" href="#" src="img/search.svg" alt="Search icon">
+    <a href="cart.html"><img class="cart-icon icon" href="cart.html" src="img/cart.svg" alt="Cart icon"></a>
+  </div>
 
-    <div class="header">
-      <img class="hamburger-icon icon" href="#" src="img/hamburger.svg" alt="Menu icon">
-      <h1 class="title"><a class="title" href="index.html">Nectar</a></h1>
-      <nav class="navigation">
-        <a class="button-nav" href="products.html">Products</a>
-        <a class="button-nav" href="about.html">About</a>
-        <a class="button-nav" href="contact.html">Contact</a>
-        <a class="button-nav" href="styleguide.html">Styleguide</a>
-      </nav>
-      <div class="search-bar"><p>search bar</p></div>
-      <img class="search-icon icon" href="#" src="img/search.svg" alt="Search icon">
-      <a href="cart.html"><img class="cart-icon icon" href="cart.html" src="img/cart.svg" alt="Cart icon"></a>
+  <div class="container product">
+    <img class="product-page-img" src="img/paint.jpeg" alt="Picture of brushes">
+
+    <div class="product-info">
+      <h2>Product</h2>
+      <h2>$$$</h2>
+      <p>This is a summary about the product. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices
+        posuere quam, eu consectetur elit lacinia nec. Quisque malesuada erat eu eleifend facilisis. Nunc quis tincidunt
+        elit, id aliquam metus.</p>
+      <a href="#" class="button-submit add-to-cart">Add to cart</a>
+
     </div>
+  </div>
 
-    <div class="container">
-      <img class="product-page-img" src="img/paint.jpeg" alt="Picture of brushes">
-      <div>
+  <div class="container review">
+    <div class="write-review">
+      <h3>Write a Review</h3>
 
+      <div class="review-rating">
+        <label for="star-icons-outline">Rating</label>
+        <div class="star-icons-outline">
+          <span class="iconify" data-icon="mdi:star-outline" data-inline="false"></span>
+          <span class="iconify" data-icon="mdi:star-outline" data-inline="false"></span>
+          <span class="iconify" data-icon="mdi:star-outline" data-inline="false"></span>
+          <span class="iconify" data-icon="mdi:star-outline" data-inline="false"></span>
+          <span class="iconify" data-icon="mdi:star-outline" data-inline="false"></span>
+        </div>
       </div>
+
+      <div class="review-name">
+        <label for="review-name">Name</label>
+        <input type="text" name="review-name">
+      </div>
+
+      <div class="review-comment">
+        <label for="comment">Comment</label>
+        <input type="text" name="comment">
+      </div>
+      <a href="#" class="button-submit">Submit</a>
     </div>
 
-    <div class="footer">
-      <h1 class="title">Nectar</h1>
-      <nav>
-        <a class="button-nav" href="#">Products</a>
-        <a class="button-nav" href="#">About</a>
-        <a class="button-nav" href="#">Contact</a>
-      </nav>
-      <div class="social-icons">
-        <div class="icon insta"></div>
-        <div class="icon fb"></div>
-        <div class="icon twitter"></div>
+    <div class="written-reviews">
+      <h3>Reviews</h3>
+      <div class="written-review">
+        <span class="bold">Bob</span>
+        <div class="star-icons">
+          <span class="iconify" data-icon="mdi:star" data-inline="false"></span>
+          <span class="iconify" data-icon="mdi:star" data-inline="false"></span>
+          <span class="iconify" data-icon="mdi:star" data-inline="false"></span>
+          <span class="iconify" data-icon="mdi:star" data-inline="false"></span>
+          <span class="iconify" data-icon="mdi:star" data-inline="false"></span>
+        </div>
+        <p>Love this product! Sustainable and great quality!</p>
       </div>
+      <div class="written-review">
+        <span class="bold">Hanna</span>
+        <div class="star-icons">
+          <span class="iconify" data-icon="mdi:star" data-inline="false"></span>
+          <span class="iconify" data-icon="mdi:star" data-inline="false"></span>
+          <span class="iconify" data-icon="mdi:star" data-inline="false"></span>
+        </div>
+        <p>Decent brush</p>
+      </div>
+      <div class="written-review">
+        <span class="bold">Sandra</span>
+        <div class="star-icons">
+          <span class="iconify" data-icon="mdi:star" data-inline="false"></span>
+          <span class="iconify" data-icon="mdi:star" data-inline="false"></span>
+          <span class="iconify" data-icon="mdi:star" data-inline="false"></span>
+          <span class="iconify" data-icon="mdi:star" data-inline="false"></span>
+        </div>
+        <p>A little pricey but fast delivery.</p>
+      </div>
+
     </div>
-  </body>
+
+  </div>
+
+  <div class="footer">
+    <h1 class="title"><a class="title" href="index.html">Nectar</a></h1>
+    <p class="copyright"><span class="iconify" data-icon="mdi:copyright" data-inline="false"></span> Copyright Mattias
+      Hallin and Madeleine Smiciklas D101</p>
+    <div class="social-icons">
+      <a class="facebook-icon" href="#">
+        <span class="iconify " data-icon="mdi:facebook" data-inline="false"></span>
+      </a>
+      <a class="instagram-icon" href="#">
+        <span class="iconify" data-icon="mdi:instagram" data-inline="false"></span>
+      </a>
+      <a class="twitter-icon" href="#">
+        <span class="iconify" data-icon="mdi:twitter" data-inline="false"></span>
+      </a>
+    </div>
+  </div>
+</body>
+
 </html>
