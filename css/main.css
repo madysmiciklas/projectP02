@@ -586,7 +586,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
     padding: 1em;
     margin: 0;
     width: 100%;
-    max-width: 30em;
+    max-width: 500px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -919,6 +919,22 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 @media(max-width:750px){
   .review{
     flex-direction: column;
+    align-items: center;
+  }
+
+  .written-reviews{
+    width: 100%;
+    padding: 1em;
+    margin: 0;
+    max-width: 400px;
+  }
+  .written-review{
+    width: 100%;
+  }
+  .write-review{
+    width: 100%;
+    padding:1em;
+    max-width: 400px;
   }
 
 }
