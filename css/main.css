@@ -360,66 +360,102 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
   flex-wrap: wrap;
 
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 .header .title{
-  padding: 0 1em;
+  padding: 0;
+  margin: 0;
   color: black;
 }
 
-.search-bar{
-  width: 25%;
+.search{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+
 }
 
-.search-bar p{
-  padding: .5em .75em;
-  background-color: darkgray;
+.search-bar{
+  border: hidden;
+  background-color: rgb(235, 235, 235);
+  color: #333;
+  font-size: 1rem;
+  outline: none;
+  max-width: 10em;
+}
+
+.search-icon{
+  background-color: rgb(235, 235, 235);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  align-items: center;
+
+  padding: 0.5em .5em;
+}
+
+.search-icon:hover{
+  background-color: rgb(222, 222, 222);
 }
 
 .icon{
   width: 24px;
   height: auto;
-  margin: 0 1em;
+  margin: .5em .5em;
   cursor: pointer;
 }
 
-.header .cart-icon{
-  display: flex;
-}
+
 
 .header .hamburger-icon{
   display: none;
-}
-.header .search-icon{
-  display: none;
+  visibility: hidden;
 }
 
+.navigation{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
 
-
-@media (max-width:750px) {
-  .header .hamburger-icon{
-    display: flex;
+@media (max-width:500px) {
+  .navigation{
+    flex-direction: column;
   }
-  .header .navigation, .header .cart-icon{
-    display: none;
+  .navigation .button-nav{
+    font-size: 1.2rem;
+  }
+  .header .title{
+    font-size: 2.4rem;
   }
   .header{
-    order: 1;
+    position: relative;
   }
+
 }
 
-@media (max-width:900px) {
-  .header .search-bar{
-    display: none;
+@media (max-width:850px){
+  .header{
+    flex-direction: column;
   }
-  
-  .header .search-icon{
-    display: flex;
+  .header{
+    position: relative;
   }
 }
-
 /*
   ----- Styling for Banner -----
 
