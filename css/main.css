@@ -78,8 +78,10 @@ input {
   font-family: "SpartanMB", sans-serif;
   color: #808080;
   font-size: 1em;
-  padding: 0.25em 0em;
+  padding: 0.25em 0.5em;
   width: 40em;
+  border-color: #333;
+  border-width: 1px;
 }
 
 /*input styling for checkbox in the filter section */
@@ -342,11 +344,13 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   ----- Styling for Header -----
 
 Inspired by:
+Lectures
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 */
 
 .header{
   width: 100%;
+  padding: 1em;
 
   display: -webkit-box;
   display: -moz-box;
@@ -671,11 +675,12 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   display: -webkit-flex;
   display: flex;
 
-  padding-left: .5em;
   justify-content: left;
 }
 .offer img{
-  width: 25%;
+  width: 30%;
+
+  min-width: 384px;
 }
 
 .offer-info{
@@ -691,25 +696,18 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
   text-align: left;
 
-  padding-left: 3em;
+  padding: 0 1em;
   justify-content: center;
   align-items: flex-start;
 }
 
+
+
 @media (max-width: 400px){
   .offer img{
-    width: 50%;
-  }
-  .offer{
-    font-size: .6rem;
-    padding: 0 1em;
-  }
-  .offer-info{
-    width: 50%;
-  }
-
-  .offer a{
-    font-size: .7rem;
+    width: 100%;
+    padding: 0 .5em;
+    min-width: 300px;
   }
 }
 
@@ -776,7 +774,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   display: -webkit-flex;
   display: flex;
 
-  padding: 1em 2em;
+  padding: 1em 1em;
 
   height: auto;
   
@@ -971,6 +969,10 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
     width: 100%;
     padding:1em;
     max-width: 400px;
+  }
+
+  .review h3{
+    text-align: center;
   }
 
 }
