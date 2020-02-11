@@ -130,6 +130,45 @@
 
 
       </section>
+      <!-- Search bar section
+      Inspired by:
+      https://www.w3schools.com/howto/howto_css_searchbar.asp
+      -->
+      <section>
+
+        <h2>Search bar</h2>
+
+        <h3>CSS selector:</h3>
+        <p>input</p>
+        <p>.search</p>
+        <p>.search-bar</p>
+        <p>search-icon</p>
+        <p>div</p>
+
+        <h3>Sample code:</h3>
+        <pre><code class="code-style">
+  &lt;div class="search"&gt;
+    &lt;input class="search-bar" type="text" placeholder="search.."&gt;
+    &lt;a href="#"&gt;
+      &lt;div class="search-icon"&gt;
+        &lt;img src="img/search.svg" alt="Search icon"&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;        
+        </code></pre>
+
+        <h3>Rendered element:</h3>
+        <div class="search">
+          <input class="search-bar" type="text" placeholder="search..">
+          <a href="#">
+            <div class="search-icon">
+              <img src="img/search.svg" alt="Search icon">
+            </div>
+          </a>
+        </div>
+
+
+      </section>
 
     </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
@@ -503,9 +542,15 @@
             <a class="button-nav" href="contact.html">Contact</a>
             <a class="button-nav" href="styleguide.html">Styleguide</a>
           </nav>
-          <div class="search-bar"><p>search bar</p></div>
-          <img class="search-icon icon" href="#" src="img/search.svg" alt="Search icon">
-          <a href="cart.html"><img class="cart-icon icon" href="cart.html" src="img/cart.svg" alt="Cart icon"></a>
+          <div class="search">
+            <input class="search-bar" type="text" placeholder="search..">
+            <a href="#">
+              <div class="search-icon">
+                <img src="img/search.svg" alt="Search icon">
+              </div>
+            </a>
+          </div>
+          <a href="cart.html"><div class="icon"><img class="cart-icon" href="cart.html" src="img/cart.svg" alt="Cart icon"></div></a>
         </div>
       </section>
 
