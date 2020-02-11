@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
   </head>
   <body>
     <div class="banner-promo">
@@ -14,21 +15,22 @@
 
     <div class="header">
       <img class="hamburger-icon icon" href="#" src="img/hamburger.svg" alt="Menu icon">
-      <h1 class="title" href="index.html">Nectar</h1>
+      <h1 class="title"><a class="title" href="index.html">Nectar</a></h1>
       <nav class="navigation">
         <a class="button-nav" href="products.html">Products</a>
         <a class="button-nav" href="about.html">About</a>
         <a class="button-nav" href="contact.html">Contact</a>
         <a class="button-nav" href="styleguide.html">Styleguide</a>
       </nav>
-      <div class="search-bar"><p>search bar</p></div>
-      <img class="search-icon icon" href="#" src="img/search.svg" alt="Search icon">
-
-      <!-- Learned how to link image to a page: https://www.w3schools.com/html/html_links.asp -->
-      <a href = "cart.html">
-      <img class="cart-icon icon" src="img/cart.svg" alt="Cart icon">
-     </a>
-
+      <div class="search">
+        <input class="search-bar" type="text" placeholder="search..">
+        <a href="#">
+          <div class="search-icon">
+            <img src="img/search.svg" alt="Search icon">
+          </div>
+        </a>
+      </div>
+      <a href="cart.html"><div class="icon"><img class="cart-icon" href="cart.html" src="img/cart.svg" alt="Cart icon"></div></a>
     </div>
 
     <div class="banner">
@@ -75,16 +77,18 @@
     </div>
 
     <div class="footer">
-      <h1 class="title">Nectar</h1>
-      <nav>
-        <a class="button-nav" href="#">Products</a>
-        <a class="button-nav" href="#">About</a>
-        <a class="button-nav" href="#">Contact</a>
-      </nav>
+      <h1 class="title"><a class="title" href="index.html">Nectar</a></h1>
+      <p class="copyright"><span class="iconify" data-icon="mdi:copyright" data-inline="false"></span> Copyright Mattias Hallin and Madeleine Smiciklas D101</p>
       <div class="social-icons">
-        <div class="icon insta"></div>
-        <div class="icon fb"></div>
-        <div class="icon twitter"></div>
+        <a class="facebook-icon" href="#">
+          <span class="iconify " data-icon="mdi:facebook" data-inline="false"></span>
+        </a>
+        <a class="instagram-icon" href="#">
+          <span class="iconify" data-icon="mdi:instagram" data-inline="false"></span>
+        </a>
+        <a class="twitter-icon" href="#">
+          <span class="iconify" data-icon="mdi:twitter" data-inline="false"></span>
+        </a>
       </div>
     </div>
   </body>
