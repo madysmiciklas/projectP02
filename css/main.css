@@ -870,6 +870,130 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 }
 
 /*
+------Styling for Cart ------------
+*/
+
+.cart {
+
+  width: 100%;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: left;
+  align-items: left;
+
+  color: black;
+  padding-bottom: 5em;
+}
+
+
+.cart-h2 {
+  width: 100%;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0.5em .75em;
+
+  flex-direction: column;
+
+  color: black;
+  justify-content: left;
+  align-items: left;
+  padding-top: 3em;
+  font-size: 1.5em;
+}
+
+.cart-img {
+  width: 20%;
+
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0.5em .75em;
+
+  flex-direction: column;
+
+  justify-content: left;
+  align-items: left;
+  padding-bottom: 2em;
+}
+
+.product-details-cart{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  padding-top: 1em;
+  padding-right: 20em;
+
+}
+
+.order-summary {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+
+  background-color: rgb(204,204,204);
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 2em;
+
+}
+
+.remove-button {
+  padding-top: 5em;
+}
+
+.order-h3 {
+  font-size: 1.5em;
+}
+
+.estimate-total {
+  font-size: 1.2em;
+  padding-top: 2em;
+}
+
+.checkout-button {
+  width: 100%;
+  display: inline-block;
+  padding: .5em 2em;
+  color: white;
+  background-color: #8CAA6E;
+  border-radius: 0em;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  padding-left:4em; 
+
+  color: white;
+}
+
+.checkout-button:hover, .checkout-button:focus {
+  background-color: #B3CC9A;
+}
+
+/*
   ----- Styling for Reviews -----
   Inspired by:
   https://css-tricks.com/snippets/css/a-guide-to-flexbox/
