@@ -17,37 +17,53 @@
   </head>
 
   <body>
-
-    <h1>Mady Smiciklas & Mattias Hallin - P02 - D101</h1>
-
-    <!--reference used for navigation bar: the Template.html from the Style Guide Template provided by Paul Brokenshire on Canvas 
-      as well as the Week 2 IAT 339 Lab Tutorial-->
+    <div class="left-bar">
+      <h2>Styleguide</h2>
+      <p>Mady Smiciklas & Mattias Hallin - P02 - D101</p>
       <nav>
         <a href="index.html">Website</a>
         <a href="styleguide.html">Styleguide</a>
         <a href="citations.html">Citations</a>
         <a href="https://github.com/madysmiciklas/projectP02">GitHub Repo</a>
-
-
-    <h2>Style Guide</h1>
-
-    <nav>
-      
-      <p>
-        Go to:
-        <a href="#interactive_elements">Interactive Elements</a>,
-        <a href="#text_elements">Text Elements</a>,
-        <a href="#combined_elements">Combined Elements</a>,
-      </p>
-
     </nav>
+        <li><a href="#site-map">Site map</a></li>
+        <li><a href="#heading-code"> Heading code</a></li>
+        <li><a href="#interactive_elements">Interactive Elements</a></li>
+        <li><a href="#nav-button">Navigation button</a></li>
+        <li><a href="#text-link">In text-link</a></li>
+        <li><a href="#buttons"> Submit and reset-buttons</a></li>
+        <li><a href="#input-field">Input Field</a></li>
+        <li><a href="#earch-bar">Search bar</a></li>
+        <li><a href="#text_elements">Text Elements</a></li>
+        <li><a href="#headings-paragraphs">Headings & Paragraph</a></li>
+        <li><a href="#bullet-list">Bullet list</a></li>
+        <li><a href="#numbered-list">Numbered list</a></li>
+        <li><a href="#combined_elements">Combined Elements</a></li>
+        <li><a href="#main-nav">Main navigation</a></li>
+        <li><a href="#product-listing">Product listing</a></li>
+        <li><a href="#written-review">Written review</a></li>
+        <li><a href="#grids">Grid structure</a></li>
+        <li><a href="#promo-banner">Promo banner</a></li>
+        <li><a href="#header">Header</a></li>
+        <li><a href="#banner">Banner</a></li>
+        <li><a href="#container">Container</a></li>
+        <li><a href="#footer">Footer</a></li>
+        <li><a href="#std-page-code">Standard page code</a></li>
+        <li><a href="#swatches">Swatches</a></li>
+    </div>
 
-    <section>
+    
+
+    <!--reference used for navigation bar: the Template.html from the Style Guide Template provided by Paul Brokenshire on Canvas 
+      as well as the Week 2 IAT 339 Lab Tutorial-->
+      
+<div class="content">
+    <section id="site-map">
       <h2>Site map</h2>
       <img class="sitemap" src="img/sitemap.png" alt="Sitemap over Nectar webbsite">
     </section>
 
-    <section>
+    <section id="heading-code">
       <h3>Heading code</h3>
       <pre><code class="code-style">       
     &lt;meta charset="utf-8" /&gt;
@@ -63,7 +79,7 @@
     <section id="interactive_elements">
 
       <!-- Default Button styling section -->
-      <section>
+      <section id="nav-button">
 
         <h2>Navigation Button</h2>
 
@@ -79,7 +95,7 @@
       </section>
 
       <!-- In-text link styling section -->
-      <section>
+      <section id="text-link">
 
         <h2>In-text link</h2>
 
@@ -95,7 +111,7 @@
       </section>
 
       <!-- Submit Button styling section -->
-      <section>
+      <section id="buttons">
 
         <h2>Submit/Reset Buttons</h2>
 
@@ -112,7 +128,7 @@
 
       <!--text input referenced from https://www.w3schools.com/html/html_forms.asp-->
       <!-- Text input section -->
-      <section>
+      <section id="input-field">
 
         <h2>Label & Text Input Field</h2>
 
@@ -134,7 +150,7 @@
       Inspired by:
       https://www.w3schools.com/howto/howto_css_searchbar.asp
       -->
-      <section>
+      <section id="search-bar">
 
         <h2>Search bar</h2>
 
@@ -179,72 +195,33 @@
     <section id="text_elements">
 
       <!--Heading 1 Section-->
-      <section>
+      <section id="headings-paragraphs">
 
-        <h2>Heading 1</h2>
+        <h2>Headings and paragraphs</h2>
 
         <h3>CSS selector:</h3>
         <p>h1</p>
+        <p>h2</p>
+        <p>h3</p>
+        <p>p</p>
 
         <h3>Sample code:</h3>
         <code>&lt;h1&gt;Header 1&lt;/h1&gt;</code>
-
-        <h3>Rendered element:</h3>
-        <h1 class="stylesheet-h1">Header 1</h1>
-
-      </section>
-
-      <!--Heading 2 Section-->
-      <section>
-
-        <h2>Heading 2</h2>
-
-        <h3>CSS selector:</h3>
-        <p>h2</p>
-
-        <h3>Sample code:</h3>
         <code>&lt;h2&gt;Header 2&lt;/h2&gt;</code>
-
-        <h3>Rendered element:</h3>
-        <h2 class="stylesheet-h2">Header 2</h2>
-
-      </section>
-
-      <!--Heading 3 Section-->
-      <section>
-
-        <h2>Heading 3</h2>
-
-        <h3>CSS selector:</h3>
-        <p>h3</p>
-
-        <h3>Sample code:</h3>
         <code>&lt;h3&gt;Header 3&lt;/h3&gt;</code>
+        <code>&lt;p&gt;Paragraph&lt;/p&gt;</code>
 
         <h3>Rendered element:</h3>
-        <h3 class="stylesheet-h3">Header 3</h3>
-
-      </section>
-
-      <!--Paragraph Section-->
-      <section>
-
-        <h2>Paragraphs</h2>
-
-        <h3>CSS selector:</h3>
-        <p>body</p>
-
-        <h3>Sample code:</h3>
-        <code>&lt;p&gt;Sample paragraph text.&lt;/p&gt;</code>
-
-        <h3>Rendered element:</h3>
-        <p>Sample paragraph text.</p>
+        <h1>Header 1</h1>
+        <h2>Header 2</h2>
+        <h3>Header 3</h3>
+        <p>Paragraph</p>
 
       </section>
 
       <!--Bullet List Section-->
       <!--Referenced: https://www.w3schools.com/tags/tag_ul.asp-->
-      <section>
+      <section id="bullet-list">
 
         <h2>Bulleted Lists</h2>
 
@@ -267,7 +244,7 @@
 
       <!--Numbered List Section-->
       <!--Referenced: https://www.w3schools.com/tags/tag_ol.asp-->
-      <section>
+      <section id="numbered-list">
 
         <h2>Numbered Lists</h2>
 
@@ -295,10 +272,10 @@
 
 
     <!-- COMBINED ELEMENTS SECTION // -->
-    section id="combined_elements">
+    <section id="combined_elements">
 
       <!--Main Nav Section-->
-      <section>
+      <section id="main-nav">
 
         <h2>Main Navigation</h2>
 
@@ -322,7 +299,7 @@
       </section>
 
       <!--Product Listing Section-->
-      <section>
+      <section id="product-listing">
 
         <h2>Product Listing</h2>
 
@@ -357,7 +334,7 @@
 
       </section>
 
-      <section>
+      <section id="written-review">
         <h2>Written Review</h2>
         <h3>CSS selector:</h3>
         <p>.written-review</p>
@@ -395,7 +372,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="write-review">
         <h2>Write a Review</h2>
         <h3>CSS selector:</h3>
         <p>.writte-review</p>
@@ -466,7 +443,7 @@
       
 
       <!--Grid Structure Section-->
-      <section>
+      <section id="grids">
 
         <h2>Grids</h2>
 
@@ -481,7 +458,7 @@
 
       </section>
 
-      <section>
+      <section id="promo-banner">
 
         <h2>Promo banner</h2>
         <h3>CSS selector:</h3>
@@ -500,7 +477,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="header">
 
         <h2>Header</h2>
 
@@ -554,7 +531,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="banner">
 
         <h2>Banner</h2>
         
@@ -582,7 +559,7 @@
         
       </section>
 
-      <section>
+      <section id="container">
 
         <h2>Container</h2>
         
@@ -632,33 +609,49 @@
             <h2>Container of for example items</h2>
           </div>
           <div class="product-item">
-            <img src="img/paint.jpeg" alt="Picture of brushes">
-            <p class="product-name">Brush</p>
-            <p class="product-price">$20.00</p>
+            <a class="link" href="product.html">
+              <img class="product-item-banner" src="img/new_item.svg" alt="New item banner">
+              <img class="product-item-img" src="img/paint.jpeg" alt="Picture of brushes">
+            </a>  
+              <a class="product-name link" href="product.html">Brush</a>
+              <a class="product-price link" href="product.html">$20.00</a>
+            
           </div>
     
           <div class="product-item">
-            <img src="img/paint.jpeg" alt="Picture of brushes">
-            <p class="product-name">Brush</p>
-            <p class="product-price">$20.00</p>
+            <a class="link" href="product.html">
+              <img class="product-item-banner" src="img/new_item.svg" alt="New item banner">
+              <img class="product-item-img" src="img/paint.jpeg" alt="Picture of brushes">
+            </a>  
+              <a class="product-name link" href="product.html">Brush</a>
+              <a class="product-price link" href="product.html">$20.00</a>
+            
           </div>
     
           <div class="product-item">
-            <img src="img/paint.jpeg" alt="Picture of brushes">
-            <p class="product-name">Brush</p>
-            <p class="product-price">$20.00</p>
+            <a class="link" href="product.html">
+              <img class="product-item-banner" src="img/new_item.svg" alt="New item banner">
+              <img class="product-item-img" src="img/paint.jpeg" alt="Picture of brushes">
+            </a>  
+              <a class="product-name link" href="product.html">Brush</a>
+              <a class="product-price link" href="product.html">$20.00</a>
+            
           </div>
     
           <div class="product-item">
-            <img src="img/paint.jpeg" alt="Picture of brushes">
-            <p class="product-name">Brush</p>
-            <p class="product-price">$20.00</p>
+            <a class="link" href="product.html">
+              <img class="product-item-banner" src="img/new_item.svg" alt="New item banner">
+              <img class="product-item-img" src="img/paint.jpeg" alt="Picture of brushes">
+            </a>  
+              <a class="product-name link" href="product.html">Brush</a>
+              <a class="product-price link" href="product.html">$20.00</a>
+            
           </div>
         </div>
         
       </section>
       
-      <section>
+      <section id="footer">
 
         <h2>Footer</h2>
         
@@ -670,7 +663,8 @@
         <pre><code class="code-style">
           &lt;div class="footer"&gt;
             &lt;h1 class="title"&gt;&lt;a class="title" href="index.html"&gt;Nectar&lt;/a&gt;&lt;/h1&gt;
-            &lt;p class="copyright"&gt;&lt;span class="iconify" data-icon="mdi:copyright" data-inline="false"&gt;&lt;/span&gt; Copyright Mattias Hallin and Madeleine Smiciklas D101&lt;/p&gt;
+            &lt;p class="copyright"&gt;&lt;span class="iconify" data-icon="mdi:copyright"
+              data-inline="false"&gt;&lt;/span&gt; Copyright Mattias Hallin and Madeleine Smiciklas D101&lt;/p&gt;
             &lt;div class="social-icons"&gt;
               &lt;a class="facebook-icon" href="#"&gt;
                 &lt;span class="iconify " data-icon="mdi:facebook" data-inline="false"&gt;&lt;/span&gt;
@@ -705,7 +699,7 @@
         
       </section>
 
-      <section>
+      <section id="std-page-code">
         <h3>Standard html page code</h3>
         <pre><code class="code-style">
           &lt; &gt;
@@ -758,7 +752,7 @@
       </section>
 
       <!--Colour Swatch Section-->
-      <section>
+      <section id="swatches">
 
         <h2>Colour Swatches</h2>
 
@@ -769,6 +763,6 @@
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
 
-
+  </div>
   </body>
 </html>
