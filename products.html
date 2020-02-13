@@ -37,206 +37,148 @@
   </div>
   <!--end of div for header -->
 
-  <div class="container">
 
     <div class="product-title">
       <h1>Products</h1>
+      <nav class="navigation product-navigation">
+        <a class="button-nav active" href="products.html">All products</a>
+        <a class="button-nav" href="products_brushes.html">Brushes</a>
+        <a class="button-nav" href="products_paint.html">Paint</a>
+        <a class="button-nav" href="products_book.html">Sketch books</a>
+        <a class="button-nav" href="products_new.html">New products</a>
+        <a class="button-nav" href="products_sale.html">Sale</a>
+      </nav>
     </div>
 
-    <h2 class="filter-h2">Filter</h2>
+<div class="container">
+  <div class="product-item">
+    <a class="link" href="product.html">
+      <img class="product-item-banner" src="img/sale_40.svg" alt="New item banner">
+      <img class="product-item-img" src="img/paint.jpeg" alt="Picture of brushes">
+    </a>
+    <a class="product-name link" href="product.html">Brush 1</a>
+    <a class="product-price link" href="product.html">$21.00</a>
+  </div>
 
-    <div class="filter">
+  <div class="product-item">
+    <a class="link" href="product.html">
+      <img class="product-item-banner" src="img/sale_40.svg" alt="New item banner">
+      <img class="product-item-img" src="img/paint.jpeg" alt="Picture of brushes">
+    </a>
+    <a class="product-name link" href="product.html">Brush 2</a>
+    <a class="product-price link" href="product.html">$21.00</a>
+  </div>
 
-      <div class="filter-category">
-        <h3 class="filter-h3">Category</h3>
+  <div class="product-item">
+    <a class="link" href="product.html">
+      <img class="product-item-banner" src="img/sale_40.svg" alt="New item banner">
+      <img class="product-item-img" src="img/paint.jpeg" alt="Picture of brushes">
+    </a>
+    <a class="product-name link" href="product.html">Brush 3</a>
+    <a class="product-price link" href="product.html">$22.00</a>
+  </div>
 
-        <div class="filter-element">
-          <!--Checkbox learned from https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_checkbox -->
-          <input class="checkbox" type="checkbox" name="Category" value="Paint Brushes">
-          <p>Paint Brushes</p>
-        </div>
+  <div class="product-item">
+    <a class="link" href="product.html">
+      <img class="product-item-banner" src="img/sale_40.svg" alt="New item banner">
+      <img class="product-item-img" src="img/paint.jpeg" alt="Picture of brushes">
+    </a>
+    <a class="product-name link" href="product.html">Brush 4</a>
+    <a class="product-price link" href="product.html">$23.00</a>
+  </div>
 
-        <div class="filter-element">
-          <!--Checkbox learned from https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_checkbox -->
-          <input class="checkbox" type="checkbox" name="Category" value="Paint Brushes">
-          <p>Sketchbooks</p>
-        </div>
+  <div class="product-item">
+    <a class="link" href="product.html">
+      <img class="product-item-banner" src="img/new_item.svg" alt="New item banner">
+      <img class="product-item-img" src="img/paint.jpeg" alt="Picture of brushes">
+    </a>
+    <a class="product-name link" href="product.html">Paint 1</a>
+    <a class="product-price link" href="product.html">$20.00</a>
+  </div>
 
-        <div class="filter-element">
-          <!--Checkbox learned from https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_checkbox -->
-          <input class="checkbox" type="checkbox" name="Category" value="Paint Brushes">
-          <p>Pencils</p>
-        </div>
-      </div>
-      <!--end of category filter -->
+  <div class="product-item">
+    <a class="link" href="product.html">
+      <img class="product-item-img" src="img/paint.jpeg" alt="Picture of brushes">
+    </a>
+    <a class="product-name link" href="product.html">Paint 2</a>
+    <a class="product-price link" href="product.html">$20.00</a>
+  </div>
 
-      <div class="filter-category-price">
-        <h3 class="filter-h3">Price</h3>
+  <div class="product-item">
+    <a class="link" href="product.html">
+      <img class="product-item-banner" src="img/new_item.svg" alt="New item banner">
+      <img class="product-item-img" src="img/paint.jpeg" alt="Picture of brushes">
+    </a>
+    <a class="product-name link" href="product.html">Paint 3</a>
+    <a class="product-price link" href="product.html">$20.00</a>
+  </div>
 
-        <div class="filter-element">
-          <!--Checkbox learned from https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_checkbox -->
-          <input class="checkbox" type="checkbox" name="Category" value="Paint Brushes">
-          <p>Less than $15</p>
-        </div>
+  <div class="product-item">
+    <a class="link" href="product.html">
+      <img class="product-item-img" src="img/paint.jpeg" alt="Picture of brushes">
+    </a>
+    <a class="product-name link" href="product.html">Paint 4</a>
+    <a class="product-price link" href="product.html">$20.00</a>
+  </div>
 
-        <div class="filter-element">
-          <!--Checkbox learned from https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_checkbox -->
-          <input class="checkbox" type="checkbox" name="Category" value="Paint Brushes">
-          <p>$15-$30</p>
-        </div>
-
-        <div class="filter-element">
-          <!--Checkbox learned from https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_checkbox -->
-          <input class="checkbox" type="checkbox" name="Category" value="Paint Brushes">
-          <p>More than 30$</p>
-        </div>
-      </div>
-      <!--end of price filter -->
-
-      <div class="filter-category-colour">
-        <h3 class="filter-h3">Colour</h3>
-
-        <div class="filter-element">
-          <!--Checkbox learned from https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_checkbox -->
-          <input class="checkbox" type="checkbox" name="Category" value="Paint Brushes">
-          <p>Warm Tones</p>
-        </div>
-
-        <div class="filter-element">
-          <!--Checkbox learned from https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_checkbox -->
-          <input class="checkbox" type="checkbox" name="Category" value="Paint Brushes">
-          <p>Cool Tones</p>
-        </div>
-
-        <div class="filter-element">
-          <!--Checkbox learned from https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_checkbox -->
-          <input class="checkbox" type="checkbox" name="Category" value="Paint Brushes">
-          <p>Greyscale</p>
-        </div>
-      </div>
-      <!--end of colour filter -->
-
-    </div>
-    <!--end of filter div -->
-
-
-    <div class="product-item">
-      <a href="product.html">
-        <img src="img/paint.jpeg" alt="Picture of brushes">
-      </a>
-      <p class="product-name">Brush</p>
-      <p class="product-price">$20.00</p>
-    </div>
-
-    <div class="product-item">
-      <img src="img/paint.jpeg" alt="Picture of brushes">
-      <p class="product-name">Brush</p>
-      <p class="product-price">$20.00</p>
-    </div>
-
-    <div class="product-item">
-      <img src="img/paint.jpeg" alt="Picture of brushes">
-      <p class="product-name">Brush</p>
-      <p class="product-price">$20.00</p>
-    </div>
-
-    <div class="product-item">
-      <img src="img/paint.jpeg" alt="Picture of brushes">
-      <p class="product-name">Brush</p>
-      <p class="product-price">$20.00</p>
-    </div>
-
-    <div class="product-item">
-      <img src="img/paint.jpeg" alt="Picture of brushes">
-      <p class="product-name">Brush</p>
-      <p class="product-price">$20.00</p>
-    </div>
-
-    <div class="product-item">
-      <img src="img/paint.jpeg" alt="Picture of brushes">
-      <p class="product-name">Brush</p>
-      <p class="product-price">$20.00</p>
-    </div>
-
-    <div class="product-item">
-      <img src="img/paint.jpeg" alt="Picture of brushes">
-      <p class="product-name">Brush</p>
-      <p class="product-price">$20.00</p>
-    </div>
-
-    <div class="product-item">
-      <img src="img/paint.jpeg" alt="Picture of brushes">
-      <p class="product-name">Brush</p>
-      <p class="product-price">$20.00</p>
-    </div>
-
-    <div class="product-item">
-      <img src="img/paint.jpeg" alt="Picture of brushes">
-      <p class="product-name">Brush</p>
-      <p class="product-price">$20.00</p>
-    </div>
-
-    <div class="product-item">
-      <img src="img/paint.jpeg" alt="Picture of brushes">
-      <p class="product-name">Brush</p>
-      <p class="product-price">$20.00</p>
-    </div>
-
-    <div class="product-item">
-      <img src="img/paint.jpeg" alt="Picture of brushes">
-      <p class="product-name">Brush</p>
-      <p class="product-price">$20.00</p>
-    </div>
-
-    <div class="product-item">
-      <img src="img/paint.jpeg" alt="Picture of brushes">
-      <p class="product-name">Brush</p>
-      <p class="product-price">$20.00</p>
-    </div>
-
-    <div class="product-item">
-      <img src="img/paint.jpeg" alt="Picture of brushes">
-      <p class="product-name">Brush</p>
-      <p class="product-price">$20.00</p>
-    </div>
-
-    <div class="product-item">
-      <img src="img/paint.jpeg" alt="Picture of brushes">
-      <p class="product-name">Brush</p>
-      <p class="product-price">$20.00</p>
-    </div>
-
-    <div class="product-item">
-      <img src="img/paint.jpeg" alt="Picture of brushes">
-      <p class="product-name">Brush</p>
-      <p class="product-price">$20.00</p>
-    </div>
-
-    <div class="product-item">
-      <img src="img/paint.jpeg" alt="Picture of brushes">
-      <p class="product-name">Brush</p>
-      <p class="product-price">$20.00</p>
-    </div>
+  <div class="product-item">
+    <a class="link" href="product.html">
+      <img class="product-item-img" src="img/paint.jpeg" alt="Picture of brushes">
+    </a>
+    <a class="product-name link" href="product.html">Book 1</a>
+    <a class="product-price link" href="product.html">$20.00</a>
 
   </div>
-  <!--end of div for container -->
 
-  <div class="footer">
-    <h1 class="title"><a class="title" href="index.html">Nectar</a></h1>
-    <p class="copyright"><span class="iconify" data-icon="mdi:copyright" data-inline="false"></span> Copyright Mattias
-      Hallin and Madeleine Smiciklas D101</p>
-    <div class="social-icons">
-      <a class="facebook-icon" href="#">
-        <span class="iconify " data-icon="mdi:facebook" data-inline="false"></span>
-      </a>
-      <a class="instagram-icon" href="#">
-        <span class="iconify" data-icon="mdi:instagram" data-inline="false"></span>
-      </a>
-      <a class="twitter-icon" href="#">
-        <span class="iconify" data-icon="mdi:twitter" data-inline="false"></span>
-      </a>
-    </div>
+  <div class="product-item">
+    <a class="link" href="product.html">
+      <img class="product-item-banner" src="img/new_item.svg" alt="New item banner">
+      <img class="product-item-img" src="img/paint.jpeg" alt="Picture of brushes">
+    </a>
+    <a class="product-name link" href="product.html">Book 2</a>
+    <a class="product-price link" href="product.html">$20.00</a>
+
   </div>
+
+  <div class="product-item">
+    <a class="link" href="product.html">
+      <img class="product-item-img" src="img/paint.jpeg" alt="Picture of brushes">
+    </a>
+    <a class="product-name link" href="product.html">Book 3</a>
+    <a class="product-price link" href="product.html">$20.00</a>
+
+  </div>
+
+  <div class="product-item">
+    <a class="link" href="product.html">
+      <img class="product-item-banner" src="img/new_item.svg" alt="New item banner">
+      <img class="product-item-img" src="img/paint.jpeg" alt="Picture of brushes">
+    </a>
+    <a class="product-name link" href="product.html">Book 4</a>
+    <a class="product-price link" href="product.html">$20.00</a>
+
+  </div>
+
+
+</div>
+<!--end of div for container -->
+
+<div class="footer">
+  <h1 class="title"><a class="title" href="index.html">Nectar</a></h1>
+  <p class="copyright"><span class="iconify" data-icon="mdi:copyright" data-inline="false"></span> Copyright Mattias
+    Hallin and Madeleine Smiciklas D101</p>
+  <div class="social-icons">
+    <a class="facebook-icon" href="#">
+      <span class="iconify " data-icon="mdi:facebook" data-inline="false"></span>
+    </a>
+    <a class="instagram-icon" href="#">
+      <span class="iconify" data-icon="mdi:instagram" data-inline="false"></span>
+    </a>
+    <a class="twitter-icon" href="#">
+      <span class="iconify" data-icon="mdi:twitter" data-inline="false"></span>
+    </a>
+  </div>
+</div>
 </body>
 
 </html>
