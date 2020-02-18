@@ -1148,7 +1148,6 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 .container-contact{
 
   width: 100%;
-  margin: 1em 2em;
 
   display: -webkit-box;
   display: -moz-box;
@@ -1163,22 +1162,6 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   flex-wrap: wrap;
 
   justify-content: center;
-
-}
-
-.contact-info {
-/*  width: 100%;
-  max-width: 1000px;
-  margin: 2em auto;
-
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap; */
 
 }
 
@@ -1227,7 +1210,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 .contact-button {
   width: 20%;
   display: inline-block;
-  padding: .5em 2em;
+  padding: .5em 0em;
   color: white;
   background-color: #8CAA6E;
   border-radius: 0em;
