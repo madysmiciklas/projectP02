@@ -2,8 +2,53 @@
 
 /*
   STYLE GUIDE STYLING 
-  Default styling for the style guide 
 */
+.styleguide{
+  margin: 0;
+}
+
+.left-bar{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  flex-direction: column;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  font-size: 12px;
+
+
+
+  padding: 1em;
+
+  width: 200px;
+
+  border-right: solid #333 1px;
+}
+.content{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 200px;
+}
+.body-styleguide{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  flex-direction: row;
+}
 
 /* Font family referenced from week 2 lecture tutorial by Paul Brokenshire */
 
@@ -99,6 +144,11 @@ label {
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
+
+.link{
+  text-decoration: none;
+  color: black;
+}
 
 /* Styling for the navigation button */
 .button-nav {
@@ -261,7 +311,7 @@ p {
   --------- Styling for Product Item ----------
 */
 .product-item{
-
+  position: relative;
   width: 25%;
   min-width: 200px;
   padding: 1em;
@@ -280,8 +330,17 @@ p {
   justify-content: space-between;
 }
 
-.product-item img{
+.product-item-img{
   width: 100%;
+  position: relative;
+  z-index: auto;
+}
+
+.product-item-banner{
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  z-index: 1;
 }
 
 .product-item p{
@@ -302,9 +361,12 @@ p {
   .product-item{
     width: 50%;
     min-width: 150px;
-    padding: 0em;
     margin: .5em 0;
-
+    padding: 0;
+  }
+  .product-item-banner{
+    top: 0;
+    right: 0;
   }
 }
 
@@ -346,6 +408,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 Inspired by:
 Lectures
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://www.w3schools.com/css/css3_shadows.asp
 */
 
 .header{
@@ -354,13 +417,16 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
   display: -webkit-box;
   display: -moz-box;
+
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
 
   position: sticky;
   top: 0;
+  z-index: 10;
   background-color: #fff;
+  box-shadow: 0 0 15px rgb(193, 193, 193);
 
   flex-wrap: wrap;
 
@@ -465,6 +531,8 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 Inspired by:
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://www.w3schools.com/css/css_background.asp
+https://alligator.io/css/background-position-property/
 */
 
 .banner{
@@ -482,7 +550,14 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   justify-content: center;
   align-items: center;
 
-  background-color: rgb(230, 230, 230);
+  background-image: url("../img/sketch_book.jpg");
+  background-position: bottom;
+
+}
+
+.banner h1, .banner p {
+  color: #fff;
+  text-shadow: 0 0 5px black;
 }
 
 /* ------ Styling for Filter -------  */
@@ -742,11 +817,30 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 }
 
 /*text-align learned from https://www.freecodecamp.org/news/how-to-center-things-with-style-in-css-dc87b7542689/ */
-.container .product-title{
+.product-title{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   padding-top: 3em;
   padding-bottom: 3em;
   width: 100%;
+}
+
+.active{
+  background-color: rgb(240, 240, 240);
+  
+}
+.unactive:hover{
+  color: black;
+}
+
+.product-navigation{
+  margin: 0 auto;
+
 }
 
 .container .about-title{
@@ -783,14 +877,15 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 .container .about-text {
   padding-top: 5em;
-  margin-left: 2em;
-  margin-right: 2em;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-.container .about-text-2 {
-  margin-left: 2em;
-  margin-right: 2em;
-  margin-bottom: 4em;
+.container .about-text2 {
+  padding-top: 2em;
+  padding-left: 8em;
+  padding-right: 8em;
+  padding-bottom: 5em;
 }
 
 .container .about-h3 {
