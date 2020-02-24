@@ -99,7 +99,7 @@ body {
 
 }
 
-section:not([id]) {
+section{
   margin: 1em 0;
   padding: 0.5em 0;
   border-top: 1px solid #333;
@@ -129,12 +129,6 @@ input {
   border-width: 1px;
 }
 
-/*input styling for checkbox in the filter section */
-.checkbox {
-  width:2em;
-  padding:0em;
-}
-
 label {
   display: block;
   margin-top: 1em;
@@ -144,6 +138,12 @@ label {
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
+/*
+   Styling for Select drop down-menu
+*/
+.drop-down-select{
+  padding-bottom: 1em;
+}
 
 .link{
   text-decoration: none;
@@ -173,7 +173,7 @@ label {
 /*styling for in-text link*/
 .text-link {
   display: inline-block;
-  padding: 0.5em 0.75em;
+  padding: 0.5em 0.0em;
   color: #8CAA6E;
   background-color: none;
   border-radius: 1em;
@@ -357,6 +357,13 @@ p {
   display: inline;
 }
 
+.red-sale{
+  color: crimson;
+}
+.old-price{
+  text-decoration: line-through;
+}
+
 @media(max-width:400px){
   .product-item{
     width: 50%;
@@ -394,6 +401,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   width: 100%;
   text-align: center;
   background-color: #8CAA6E;
+  z-index: 10;
 }
 .banner-promo p{
   color: #fff;
@@ -424,7 +432,7 @@ https://www.w3schools.com/css/css3_shadows.asp
 
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 5;
   background-color: #fff;
   box-shadow: 0 0 15px rgb(193, 193, 193);
 
@@ -448,6 +456,7 @@ https://www.w3schools.com/css/css3_shadows.asp
   display: flex;
   flex-direction: row;
   width: fit-content;
+  margin: .5em;
 
 }
 
@@ -680,6 +689,13 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   margin: 0 auto;
   padding: 1em 1em;
   width: 20em;
+}
+
+.product-info h2{
+  margin-bottom: .5em;
+}
+.product-info p{
+  margin-bottom: 1em;
 }
 
 
@@ -1015,8 +1031,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
   flex-direction: row;
 
-
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: left;
 
   color: black;
@@ -1098,7 +1113,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 }
 
 .remove-button {
-  padding-top: 3em;
+  padding-top: 5em;
 }
 
 .order-h3 {
@@ -1258,7 +1273,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   flex-direction: row;
   flex-wrap: wrap;
 
-  align-items: stretch;
+  align-items: flex-start;
   justify-content: space-between;
 }
 .review h1{
@@ -1381,4 +1396,57 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
     text-align: center;
   }
 
+}
+
+/*
+  ----- Styling for Checkout -----
+  Inspired by:
+  https://www.w3schools.com/tags/att_input_type_radio.asp
+*/
+
+.checkout{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 700px;
+  padding: 1em;
+  margin: 0 auto;
+}
+.checkout input{
+  width: 100%
+}
+
+.checkout .button-submit, .checkout .text-link{
+  margin: 1em 0 .5em;
+  text-align: center;
+}
+
+.checkout .text-link{
+  margin:0;
+  text-align: center;
+}
+.checkout h3{
+  margin: 1em 0 .5em;
+}
+
+.checkout h1{
+  margin: 0;
+}
+
+.radio {
+  width: auto;
+  padding: 0;
+}
+
+.radio-label {
+  display: inline;
+}
+
+.thank-you{
+  text-align: center;
 }
