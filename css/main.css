@@ -1517,3 +1517,32 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   text-align: center;
   min-height: 100vh;
 }
+
+/* Styling for citations */
+
+.citations-img-head {
+ font-weight: bold;
+  margin-left: 2em;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+.img-citations {
+  margin-left: 2em;
+}
+
+.citations-main-h1{
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+}
+
+.citations-nav {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1.3em;
+}
+
+.citations-h2{
+  
+}
+
