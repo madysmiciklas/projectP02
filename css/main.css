@@ -1520,14 +1520,14 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 /* Styling for citations */
 
-.citations-img-head {
+.citations-head {
  font-weight: bold;
   margin-left: 2em;
   margin-top: 2em;
   margin-bottom: 0.5em;
 }
 
-.img-citations {
+.bullet-citations {
   margin-left: 2em;
 }
 
@@ -1543,6 +1543,15 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 }
 
 .citations-h2{
-  
+  margin-left: .6em;
+  margin-top: 1em;
+}
+
+.website-tab {
+  margin-right: 1em;
+}
+
+.styleguide-tab {
+  margin-right: 1em;
 }
 
