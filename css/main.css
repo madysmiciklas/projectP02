@@ -1110,11 +1110,12 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 }
 
 .cart-img {
-  max-width: 20em;
+  max-width: 16em;
+  max-height: 16em;
   min-width: 10em;
   height: auto;
-  margin-right: 3em;
   margin-top: 3em;
+  margin-left: 3em;
 }
 
 .product-details-cart{
@@ -1127,7 +1128,8 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   justify-content: left;
   align-items: left;
   margin-top: 3em;
-  margin-right: 15em;
+  margin-right: 3em;
+  margin-left:3em;
 }
 
 .order-box {
@@ -1138,7 +1140,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   display: flex;
   flex-direction: column;
   justify-content: left; 
-
+  margin-left: 3em;
 
 }
 
@@ -1152,7 +1154,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   justify-content: left;
   align-items: left;
 
-  background-color: rgb(204,204,204);
+  background-color: rgb(230, 230, 230);
   padding-top: 1em;
   padding-left: 1em;
   padding-right: 2em;
@@ -1171,9 +1173,24 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 }
 
 .estimate-total {
-  font-size: 1.2em;
-  padding-top: 2em;
+  font-size: 1em;
+  padding-top: 1em;
   padding-bottom: 1em;
+  font-weight: bold;
+}
+
+.est-tax {
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #333;
+}
+
+.est-shipping {
+  padding-bottom: 0.5em;
+}
+
+.subtotal {
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
 }
 
 .checkout-button {
