@@ -1453,6 +1453,15 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   width: 50%;
   padding: 1em;
 }
+
+/*
+color: gold;
+*/
+
+.star-icons-outline .iconify:hover{
+  color: gold;
+} 
+
 .write-review h3{
   width: 100%
 }
