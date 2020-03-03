@@ -118,7 +118,7 @@ https://www.w3schools.com/cssref/css3_pr_box-sizing.asp
   font-weight: normal;
   font-style: normal;
   src: url('../fonts/SpartanMB-Regular.otf');
-  src: url('../fonts/SpartanMB-Regular.otf?#iefix') format('embedded-opentype'), 
+  src: url('../fonts/SpartanMB-Regular.otf?#iefix') format('embedded-opentype'); 
 }
 
 @font-face {
@@ -126,7 +126,7 @@ https://www.w3schools.com/cssref/css3_pr_box-sizing.asp
   font-weight: bold;
   font-style: normal;
   src: url('../fonts/SpartanMB-SemiBold.otf');
-  src: url('../fonts/SpartanMB-SemiBold.otf?#iefix') format('embedded-opentype'),
+  src: url('../fonts/SpartanMB-SemiBold.otf?#iefix') format('embedded-opentype');
 }
 /*
 Inspired by
@@ -195,7 +195,7 @@ label {
   display: inline-block;
   padding: 0.5em 0.75em;
   color: #333333;
-  background-color: none;
+  background-color: transparent;
   border-radius: 1em;
   font-weight: bold;
   font-size: 1rem;
@@ -215,7 +215,7 @@ label {
   display: inline-block;
   padding: 0.5em 0.0em;
   color: #8CAA6E;
-  background-color: none;
+  background-color: transparent;
   border-radius: 1em;
   font-weight: bold;
   font-size: 1rem;
@@ -256,27 +256,21 @@ label {
 
 /*Styling for header 1 in stylesheet NOT for P01 page*/
 h1 {
-  padding: none;
   color: black;
-  background-color: none;
   font-weight: bold;
   font-size: 2.6rem;
   text-decoration: none;
 }
 
 h2 {
-  padding: none;
   color: black;
-  background-color: none;
   font-weight: bold;
   font-size: 2rem;
   text-decoration: none;
 }
 
 h3 {
-  padding: none;
   color: black;
-  background-color: none;
   font-weight: normal;
   font-size: 1.7rem;
   text-decoration: none;
@@ -284,9 +278,7 @@ h3 {
 }
 
 p {
-  padding: none;
   color: black;
-  background-color: none;
   font-weight: normal;
   font-size: 1rem;
   text-decoration: none;
@@ -308,7 +300,6 @@ p {
   display: inline-block;
   padding: 0.5em 1.75em;
   color: #333333;
-  background-color: none;
   border-radius: 1em;
   font-weight: bold;
   font-size: 1.5rem;
@@ -651,7 +642,7 @@ https://alligator.io/css/background-position-property/
   flex-direction: row;
 
   justify-content: left;
-  align-items: left;
+  align-items: flex-start;
 
   color: black;
   background-color: darkgray;
@@ -671,7 +662,7 @@ https://alligator.io/css/background-position-property/
 
   color: white;
   justify-content: left;
-  align-items: left;
+  align-items: flex-start;
   background-color: grey;
 }
 
@@ -687,7 +678,7 @@ https://alligator.io/css/background-position-property/
   display: flex;
   flex-direction: column;
   justify-content: left;
-  align-items: left;
+  align-items: flex-start;
 }
 
 .filter-category-price {
@@ -698,7 +689,7 @@ https://alligator.io/css/background-position-property/
   display: flex;
   flex-direction: column;
   justify-content: left;
-  align-items: left;
+  align-items: flex-start;
   padding-left: 3em;
 }
 
@@ -710,7 +701,7 @@ https://alligator.io/css/background-position-property/
   display: flex;
   flex-direction: column;
   justify-content: left;
-  align-items: left;
+  align-items: flex-start;
   padding-left: 3em;
 }
 
@@ -722,7 +713,7 @@ https://alligator.io/css/background-position-property/
   display: flex;
   flex-direction: row;
   justify-content: left;
-  align-items: left;
+  align-items: flex-start;
 }
 
 /*
@@ -750,7 +741,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   flex-wrap: wrap;
 
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   justify-content: center;
 
   margin: 0 auto;
@@ -819,7 +810,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-left: 0 3em;
+  padding-left: 3em;
 
   justify-content: space-around;
 }
@@ -1121,7 +1112,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   flex-direction: row;
 
   justify-content: space-between;
-  align-items: left;
+  align-items: flex-start;
 
   color: black;
   padding-bottom: 5em;
@@ -1145,7 +1136,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
   color: black;
   justify-content: left;
-  align-items: left;
+  align-items: flex-start;
   padding-top: 2em;
   font-size: 1.5em;
 
@@ -1169,7 +1160,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   display: flex;
   flex-direction: column;
   justify-content: left;
-  align-items: left;
+  align-items: flex-start;
   margin-top: 3em;
   margin-right: 3em;
   margin-left:3em;
@@ -1195,7 +1186,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   display: flex;
   flex-direction: column;
   justify-content: left;
-  align-items: left;
+  align-items: flex-start;
 
   background-color: rgb(230, 230, 230);
   padding-top: 1em;
@@ -1250,7 +1241,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   display: flex;
   flex-direction: column;
   justify-content: left;
-  align-items: left;
+  align-items: flex-start;
   
   padding: .5em 2em;
   color: white;
