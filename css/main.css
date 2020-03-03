@@ -22,14 +22,54 @@
   bottom: 0;
   font-size: 12px;
 
-
-
   padding: 1em;
 
-  width: 200px;
+  width: 60px;
 
-  border-right: solid #333 1px;
+  background-color: #8CAA6E;
+
+  transition: 0.5s;
 }
+
+.left-bar:hover{
+  width: 11rem;
+}
+
+.left-bar:hover .style-nav{
+  display: inline;
+}
+
+.arrow{
+  transition: 0.5s;
+}
+/*
+Inspired by
+https://www.w3schools.com/cssref/css3_pr_transform.asp
+*/
+.left-bar:hover .arrow{
+  transform: rotate(-180deg);
+}
+
+.style-nav{
+  display: none;
+  list-style: none;
+  text-decoration: none;
+
+}
+
+.style-nav a{
+  text-decoration: none;
+  color: #fff;
+  transition: .5s;
+}
+.style-nav li{
+    padding-bottom: .2rem;
+}
+.style-nav a:hover{
+  text-decoration: underline;
+  color: #B3CC9A;
+}
+
 .content{
   display: -webkit-box;
   display: -moz-box;
@@ -37,8 +77,8 @@
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
-  width: 80%;
-  margin-left: 200px;
+  width: 100%;
+  padding-left: 60px;
 }
 .body-styleguide{
   display: -webkit-box;
@@ -220,16 +260,16 @@ h1 {
   color: black;
   background-color: none;
   font-weight: bold;
-  font-size: 2.6em;
+  font-size: 2.6rem;
   text-decoration: none;
 }
 
 h2 {
   padding: none;
-  color: #8CAA6E;
+  color: black;
   background-color: none;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 2rem;
   text-decoration: none;
 }
 
@@ -238,7 +278,7 @@ h3 {
   color: black;
   background-color: none;
   font-weight: normal;
-  font-size: 1.7em;
+  font-size: 1.7rem;
   text-decoration: none;
   margin-bottom: 1rem;
 }
@@ -248,7 +288,7 @@ p {
   color: black;
   background-color: none;
   font-weight: normal;
-  font-size: 1em;
+  font-size: 1rem;
   text-decoration: none;
 }
 .bold{
@@ -256,8 +296,8 @@ p {
 }
 
 .code-style {
-  display:block;
-  width:auto;
+  display:inline-block;
+  font-size: .8rem;
 }
 
 .title{
