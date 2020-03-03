@@ -1087,6 +1087,9 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   padding-bottom: 5em;
 }
 
+.cart-removed{
+  min-height: 80vh;
+}
 
 .cart-h2 {
   width: 100%;
@@ -1165,6 +1168,10 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 .remove-button {
   padding-top: 5em;
+  color: black;
+}
+.remove-button:hover{
+  color: #333;
 }
 
 .order-h3 {
