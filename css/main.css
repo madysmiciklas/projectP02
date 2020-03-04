@@ -121,16 +121,16 @@ https://www.w3schools.com/cssref/css3_pr_box-sizing.asp
   font-family: 'SpartanMB';
   font-weight: normal;
   font-style: normal;
-  src: url('../fonts/SpartanMB-Regular.otf');
-  src: url('../fonts/SpartanMB-Regular.otf?#iefix') format('embedded-opentype'); 
+  src: url('../fonts/Spartan-Regular.ttf');
+  src: url('../fonts/Spartan-Regular.ttf?#iefix') format('embedded-opentype'); 
 }
 
 @font-face {
-  font-family: 'Nunito';
+  font-family: 'SpartanMB';
   font-weight: bold;
   font-style: normal;
-  src: url('../fonts/SpartanMB-SemiBold.otf');
-  src: url('../fonts/SpartanMB-SemiBold.otf?#iefix') format('embedded-opentype');
+  src: url('../fonts/Spartan-SemiBold.ttf');
+  src: url('../fonts/Spartan-SemiBold.ttf?#iefix') format('embedded-opentype');
 }
 
 @font-face {
@@ -153,7 +153,7 @@ Inspired by
 https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b
 */
 body {
-  font-family: "SpartanMB", "Nunito", sans-serif;
+  font-family: "Spartan", "Nunito", sans-serif;
   font-size: 16px;
   min-height: 100%;
 
