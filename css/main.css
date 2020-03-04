@@ -640,6 +640,13 @@ https://alligator.io/css/background-position-property/
 .banner h1, .banner p {
   color: #fff;
   text-shadow: 0 0 5px black;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px){
+  .banner h1{
+    text-align: center;
+  }
 }
 
 /* ------ Styling for Filter -------  */
@@ -825,7 +832,6 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-left: 3em;
 
   justify-content: space-around;
 }
@@ -842,8 +848,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   justify-content: left;
 }
 .offer img{
-  width: 30%;
-
+  margin: 0 auto;
   min-width: 384px;
 }
 
@@ -861,17 +866,25 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   text-align: left;
 
   padding: 0 1em;
+  margin: 0 auto;
   justify-content: center;
   align-items: flex-start;
 }
 
 
 
-@media (max-width: 400px){
+@media (max-width: 500px){
+  .offer{
+    flex-direction: column;
+  }
   .offer img{
     width: 100%;
-    padding: 0 .5em;
-    min-width: 300px;
+    
+    min-width: 250px;
+  }
+
+  .offer h1{
+    font-size: 2rem;
   }
 }
 
