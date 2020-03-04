@@ -126,7 +126,6 @@ https://www.w3schools.com/cssref/css3_pr_box-sizing.asp
   src: url('../fonts/Spartan-SemiBold.ttf');
   src: url('../fonts/Spartan-SemiBold.ttf?#iefix') format('embedded-opentype');
 }
-  font-style: normal;
 
 @font-face {
   font-family: 'Nunito';
@@ -149,6 +148,7 @@ https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-
 body {
   font-family: "Nunito", "Spartan", sans-serif;
   font-size: 16px;
+  line-height: 2;
   min-height: 80vh;
 
 }
@@ -197,6 +197,7 @@ label {
 */
 .drop-down-select{
   padding-bottom: 1em;
+  height: auto;
 }
 
 .link{
