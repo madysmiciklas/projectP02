@@ -1203,10 +1203,14 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 .remove-button {
   padding-top: 5em;
-  color: black;
+  color: #8CAA6E;
+  border-radius: 1em;
+  text-decoration: underline;
+  font-weight: bold;
 }
+
 .remove-button:hover{
-  color: #333;
+  color: #B3CC9A;
 }
 
 .order-h3 {
