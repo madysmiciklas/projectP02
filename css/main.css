@@ -971,8 +971,8 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 .values-text {
   margin-bottom: 3em;
-  color: #8CAA6E;
-  font-weight: bold;
+  color: black;
+  font-weight: normal;
   font-size: 1.3em;
   white-space: pre-line;
 }
