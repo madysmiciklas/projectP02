@@ -126,11 +126,11 @@ https://www.w3schools.com/cssref/css3_pr_box-sizing.asp
 }
 
 @font-face {
-  font-family: 'SpartanMB';
+  font-family: 'Nunito';
   font-weight: bold;
   font-style: normal;
-  src: url('../fonts/Nunito-Bold.ttf');
-  src: url('../fonts/Nunito-Bold.ttf?#iefix') format('embedded-opentype');
+  src: url('../fonts/SpartanMB-SemiBold.otf');
+  src: url('../fonts/SpartanMB-SemiBold.otf?#iefix') format('embedded-opentype');
 }
 
 @font-face {
@@ -145,8 +145,8 @@ https://www.w3schools.com/cssref/css3_pr_box-sizing.asp
   font-family: 'Nunito';
   font-weight: bold;
   font-style: normal;
-  src: url('../fonts/SpartanMB-SemiBold.otf');
-  src: url('../fonts/SpartanMB-SemiBold.otf?#iefix') format('embedded-opentype');
+  src: url('../fonts/Nunito-Bold.ttf');
+  src: url('../fonts/Nunito-Bold.ttf?#iefix') format('embedded-opentype');
 }
 /*
 Inspired by
