@@ -90,6 +90,10 @@ https://www.w3schools.com/cssref/css3_pr_transform.asp
   flex-direction: row;
 }
 
+.swatch-img {
+  margin-top: 2em;
+}
+
 /* Font family referenced from week 2 lecture tutorial by Paul Brokenshire */
 
 /*
