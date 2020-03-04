@@ -3,9 +3,7 @@
 /*
   STYLE GUIDE STYLING 
 */
-.styleguide{
-  margin: 0;
-}
+
 
 .left-bar{
   display: -webkit-box;
@@ -109,10 +107,6 @@ https://www.w3schools.com/cssref/css3_pr_box-sizing.asp
   box-sizing: border-box;
 }
 
-.styleguide{
-  margin: 1em;
-}
-
 .sitemap{
   width: 100%;
 }
@@ -132,19 +126,19 @@ https://www.w3schools.com/cssref/css3_pr_box-sizing.asp
   src: url('../fonts/Spartan-SemiBold.ttf');
   src: url('../fonts/Spartan-SemiBold.ttf?#iefix') format('embedded-opentype');
 }
+  font-style: normal;
 
 @font-face {
   font-family: 'Nunito';
   font-weight: normal;
   font-style: normal;
-  src: url('../fonts/Nunito-Regular.ttf');
   src: url('../fonts/Nunito-Regular.ttf?#iefix') format('embedded-opentype'); 
+  src: url('../fonts/Nunito-Regular.ttf');
 }
-
 @font-face {
+
   font-family: 'Nunito';
   font-weight: bold;
-  font-style: normal;
   src: url('../fonts/Nunito-Bold.ttf');
   src: url('../fonts/Nunito-Bold.ttf?#iefix') format('embedded-opentype');
 }
@@ -155,7 +149,7 @@ https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-
 body {
   font-family: "Nunito", "Spartan", sans-serif;
   font-size: 16px;
-  min-height: 100%;
+  min-height: 80vh;
 
 }
 
@@ -528,7 +522,7 @@ https://css-tricks.com/change-color-of-svg-on-hover/
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
-  width: fit-content;
+  width: fit-content(100%);
   margin: .5em;
 
 }
@@ -789,7 +783,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
     width: 100%;
     
     margin: 0;
-    min-width: none;
+    min-width: 0;
   }
   .product-info{
     padding: 1em;
@@ -1418,7 +1412,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
   flex-direction: column;
 
-  align-items: left;
+  align-items: flex-start;
   justify-content: center;
 
   margin: 0 auto;
