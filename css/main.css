@@ -829,7 +829,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-
+  align-items: flex-start;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 
@@ -838,7 +838,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 .offer-img{
   width: 50%;
-
+  height: auto;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -850,6 +850,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 .offer img{
   margin: 0 auto;
   min-width: 384px;
+  height: auto;
 }
 
 .offer-info{
@@ -976,6 +977,10 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
   margin-left: 2em;
   margin-right: 2em;
+}
+
+.about{
+  align-items: flex-start;
 }
 
 .container .about-text {
