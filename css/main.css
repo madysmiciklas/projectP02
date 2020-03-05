@@ -970,9 +970,8 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   }
 }
 
-.container .about-img {
-  max-width: 100%;
-  min-width: 50%;
+.about-img {
+  max-width: 85%;
   height: auto;
 
   margin-left: 2em;
@@ -1278,7 +1277,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
   align-items: flex-start;
   
   padding: .5em 2em;
@@ -1288,7 +1287,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   font-weight: bold;
   font-size: 1rem;
   text-decoration: none;
-  justify-content: right;
+  justify-content: center;
   color: white;
   text-align: center;
   margin: 1em auto;
