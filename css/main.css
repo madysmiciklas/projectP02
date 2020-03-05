@@ -22,7 +22,7 @@
 
   padding: 1em;
 
-  width: 60px;
+  width: 5vw;
 
   background-color: #8CAA6E;
 
@@ -75,8 +75,8 @@ https://www.w3schools.com/cssref/css3_pr_transform.asp
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  padding-left: 60px;
+  width: 93vw;
+  margin-left: auto;
 }
 .body-styleguide{
   display: -webkit-box;
@@ -972,6 +972,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 .container .about-img {
   max-width: 100%;
   min-width: 50%;
+  height: auto;
 
   margin-left: 2em;
   margin-right: 2em;
@@ -1481,7 +1482,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 color: gold;
 */
 
-.star-icons-outline .iconify:hover{
+#star-icons-outline .iconify:hover{
   color: gold;
 } 
 
@@ -1493,11 +1494,11 @@ color: gold;
   margin-top: 1em;
 
 }
-.review-name{
+#review-name{
   flex: 1 1 50%;
   margin-right: 1em;
 }
-.review-name input{
+#review-name input{
   width: 100%;
 }
 .review-rating{
@@ -1506,13 +1507,13 @@ color: gold;
 .review-rating label{
   display: flex;
 }
-.review-rating .star-icons-outline{
+.review-rating #star-icons-outline{
   font-size: 1.5rem;
 }
-.review-comment{
+#review-comment{
   width: 100%;
 }
-.review-comment input{
+#review-comment input{
   width: 100%;
 }
 
