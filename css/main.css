@@ -1338,7 +1338,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 }
 
 .name-input {
-  width: 25em;
+  width: 18em;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1346,7 +1346,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 }
 
 .email-input {
-  width: 25em;
+  width: 18em;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1354,7 +1354,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 }
 
 .message-input {
-  width: 25em;
+  width: 18em;
   padding-bottom: 3em;
   display: block;
   margin-left: auto;
