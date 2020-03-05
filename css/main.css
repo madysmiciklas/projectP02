@@ -1321,6 +1321,28 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 }
 
+.contact-message {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 700px;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+.contact-message input{
+  width: 100%;
+}
+
+.contact-message label{
+  align-items: left;
+}
+
 /* White-space learned from: https://www.designcise.com/web/tutorial/how-to-add-a-line-break-to-an-html-element-using-css-only */
 
 .contact-h2 {
@@ -1364,20 +1386,28 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 }
 
 .contact-button {
-  width: 20%;
-  display: inline-block;
-  padding: .5em 0em;
-  color: white;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+
+  width: 25%;
+  max-width: 700px;
+  padding: 1em;
+  margin: 0 auto;
+
+  color: white; 
   background-color: #8CAA6E;
   border-radius: 0em;
   font-weight: bold;
   font-size: 1rem;
-  text-decoration: none;
-
-  white-space: pre-line;
-
-  color: white; 
-  margin-bottom: 3em;
+    padding: .5em 0em;
+    text-decoration: none;
+    margin-bottom: 3em; 
+    margin-top: 1em;
 }
 
 .contact-button:hover, .contact-button:focus {
@@ -1387,12 +1417,19 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   /* unique to contact_message.html: */
 
   .thank-you-msg {
-    background-color: grey;
-    color: white;
-    width: 25em;
-    padding-bottom: 2em;
-    margin-left: auto;
-    margin-right: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: block;
+  flex-direction: column;
+
+  width: 100%;
+  text-align: center;
+  max-width: 700px;
+  padding: 1em;
+  margin: 0 auto;
+    color: grey;
     margin-bottom: 2em;
     white-space: pre-line;
   }
